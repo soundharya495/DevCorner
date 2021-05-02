@@ -65,7 +65,7 @@ const EditProfile = ({
     setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const onSubmit = (e) => {
-    console.log("submit called");
+    
     e.preventDefault();
     createProfile(formData, history, true);
   };

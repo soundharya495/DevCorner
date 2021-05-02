@@ -21,7 +21,7 @@ export const getCurrentProfile = () => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    console.log(err.msg);
+    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
@@ -40,7 +40,7 @@ export const getProfiles = () => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    console.log(err.msg);
+    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
@@ -58,7 +58,7 @@ export const getProfileById = (userId) => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    console.log(err);
+    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
@@ -76,7 +76,7 @@ export const getGithubRepos = (username) => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    console.log(err.msg);
+    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
