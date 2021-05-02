@@ -32,7 +32,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
     <Fragment>
       <h1 className="large text-primary">Sign Up</h1>
       <p className="lead">
-        <i className="fas fa-user"></i> Create Your Account
+        <i className="fa fa-user"></i> Create Your Account
       </p>
       <form className="form" onSubmit={(e) => onSubmit(e)}>
         <div className="form-group">
