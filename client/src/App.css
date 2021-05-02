@@ -40,8 +40,8 @@ img {
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
-  margin-top: 6rem !important;
-  margin-bottom: 3rem !important;
+  margin-top: 6rem;
+  margin-bottom: 3rem;
 }
 
 /* Text Styles*/
@@ -154,6 +154,7 @@ img {
   opacity: 0.9;
   background: var(--light-color);
   color: #333;
+  margin-top: 3rem;
 }
 
 .btn-primary,

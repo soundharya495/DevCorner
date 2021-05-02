@@ -31,7 +31,7 @@ const AddEducation = ({ addEducation, history }) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   return (
     <Fragment>
-      <h1 className="large text-primary">Add An Experience</h1>
+      <h1 className="large text-primary">Add An Education</h1>
       <p className="lead">
         <i className="fa fa-code-branch"></i> Add any school or bootcamp that
         you have attended
@@ -74,7 +74,7 @@ const AddEducation = ({ addEducation, history }) => {
           />
         </div>
         <div className="form-group">
-          <h4>From Date</h4>
+          <h4>* From Date</h4>
           <input
             type="date"
             name="from"
@@ -94,11 +94,11 @@ const AddEducation = ({ addEducation, history }) => {
                 toggleDisabled(!toDateDisabled);
               }}
             />{" "}
-            Current Job
+            Current Degree
           </p>
         </div>
         <div className="form-group">
-          <h4>To Date</h4>
+          <h4>* To Date</h4>
           <input
             type="date"
             name="to"

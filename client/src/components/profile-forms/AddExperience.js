@@ -66,7 +66,7 @@ const AddExperience = ({ addExperience, history }) => {
           />
         </div>
         <div className="form-group">
-          <h4>From Date</h4>
+          <h4>* From Date</h4>
           <input
             type="date"
             name="from"
@@ -90,7 +90,7 @@ const AddExperience = ({ addExperience, history }) => {
           </p>
         </div>
         <div className="form-group">
-          <h4>To Date</h4>
+          <h4>* To Date</h4>
           <input
             type="date"
             name="to"

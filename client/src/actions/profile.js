@@ -21,7 +21,6 @@ export const getCurrentProfile = () => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
@@ -40,7 +39,6 @@ export const getProfiles = () => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
@@ -58,7 +56,6 @@ export const getProfileById = (userId) => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
@@ -76,7 +73,6 @@ export const getGithubRepos = (username) => async (dispatch) => {
       payload: res.data,
     });
   } catch (err) {
-    
     dispatch({
       type: PROFILE_ERROR,
       payload: { msg: err.response.statustext, status: err.response.status },
@@ -105,9 +101,7 @@ export const createProfile = (formData, history, edit = false) => async (
 
     dispatch(setAlert(edit ? "Profile Updated" : "Profile Created", "success"));
 
-    if (!edit) {
-      history.push("/dashboard");
-    }
+    history.push("/dashboard");
   } catch (err) {
     const errors = err.response.data.errors;
     if (errors) {
